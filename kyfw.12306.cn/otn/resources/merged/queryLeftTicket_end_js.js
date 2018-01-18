@@ -5858,7 +5858,7 @@ var checkusermdId; var showTrainStop; var hideTrainStop; var showTicketPrice; va
         }
       })
     } else {
-      if (ct < 6) {
+      if (ct < 666) {
         var cr = /^[a-zA-Z0-9]+$/;
         var cs = /^[0-9]+$/;
         if (!cr.test(cu)) {

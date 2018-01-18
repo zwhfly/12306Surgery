@@ -4066,6 +4066,7 @@ var checkusermdId; var showTrainStop; var hideTrainStop; var showTicketPrice; va
       }
     }
     clearInterval(a0);
+    autoSearchTime = 3000;
     a0 = window.setInterval(function () {
       if (train_tour_flag == 'fc') {
         $('#back_train_date').val(cq)

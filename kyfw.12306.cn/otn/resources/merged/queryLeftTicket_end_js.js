@@ -3142,6 +3142,10 @@ var checkusermdId; var showTrainStop; var hideTrainStop; var showTicketPrice; va
       },
       error: function (cs, cu, ct) {
         dhtmlx.modalbox.hide(cr);
+        if ($('#query_ticket').html() == '停止查询') {
+          $('#query_ticket').trigger('click').trigger('click');
+          return
+        }
         if (cs.status == 403) {
           if ($('#query_ticket').html() == '停止查询') {
             if (queryLeftTicket_times <= queryLeftTicket_count) {

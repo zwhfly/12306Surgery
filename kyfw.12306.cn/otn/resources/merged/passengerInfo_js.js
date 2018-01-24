@@ -907,6 +907,8 @@ var intervalProcess;
               X += '。';
               if (Y.data.op_2 == 'true') {
                 X += '<font color="red">目前排队人数已经超过余票张数，请您选择其他席别或车次。</font>';
+              }
+              if (false) {
                 $('#qr_submit_id').hide()
               } else {
                 if (Y.data.countT > 0) {

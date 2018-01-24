@@ -3152,17 +3152,12 @@ var checkusermdId; var showTrainStop; var hideTrainStop; var showTicketPrice; va
             }
             return
           }
-          if (cs.responseText == '0' || cs.responseText == '2' || cs.responseText == '3' || cs.responseText == '4' || cs.responseText == '7') {
-            cm('非法请求！');
+          if (cs.responseText == '0' || cs.responseText == '1' || cs.responseText == '2' || cs.responseText == '3' || cs.responseText == '4') {
+            cm('查询失败！（' + cs.responseText + '）');
             return
           } else {
-            if (cs.responseText == '1' || cs.responseText == '5' || cs.responseText == '6') {
-              cm('您的操作频率过快，请稍后再试！');
-              return
-            } else {
-              cm('查询失败，请稍后再试！');
-              return
-            }
+            cm('查询失败，请稍后再试！');
+            return
           }
         } else {
           if (cu = 'timeout') {

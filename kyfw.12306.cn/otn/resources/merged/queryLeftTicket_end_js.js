@@ -5798,22 +5798,22 @@ var checkusermdId; var showTrainStop; var hideTrainStop; var showTicketPrice; va
     if (cq != null) {
       if (cq == 'fc') {
         otsRedirect('post', ctx + 'confirmPassenger/initFc', {
-        });
+        }, '_blank');
         return
       }
       if (cq == 'gc') {
         otsRedirect('post', ctx + 'confirmPassenger/initGc', {
-        });
+        }, '_blank');
         return
       }
     }
     if (cr == 'dc') {
       otsRedirect('post', ctx + 'confirmPassenger/initDc', {
-      });
+      }, '_blank');
       return
     } else {
       otsRedirect('post', ctx + 'confirmPassenger/initWc', {
-      })
+      }, '_blank')
     }
   }
   var cl = $('#fromStation').val();

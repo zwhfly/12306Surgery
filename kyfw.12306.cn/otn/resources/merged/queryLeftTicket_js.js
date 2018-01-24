@@ -92,7 +92,7 @@ var jPlayer;
       var g = $(this).attr('scode');
       var f = $('#prior_seat span').length;
       if (!$(this).hasClass('cur')) {
-        if (f < 6) {
+        if (f < 666) {
           if ($.canSelectThisSeatType(g)) {
             var e = '<span class=\'sel-box w80\' name=\'' + h + '\'>' + h + '<a class=\'close\' href=\'javascript:\' onclick=\'$.removeSel(this,"' + g + '",2)\'></a></span>';
             $('#prior_seat').append(e);

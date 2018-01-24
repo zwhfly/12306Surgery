@@ -435,7 +435,7 @@ var jPlayer;
     },
     addChildPassenger: function (e) {
       var d = $('#setion_postion span').length;
-      if (d < 6) {
+      if (d < 666) {
         e = e.split('(') [0] + '(儿童)(' + e.split('(') [2];
         var c = '<span name=\'' + e + '\' class=\'sel-box w80\'>' + e + '<a class=\'close\' href=\'javascript:\' onclick=\'$.removeSel(this,"' + e + '",1)\'></a></span>';
         $('#setion_postion').append(c);

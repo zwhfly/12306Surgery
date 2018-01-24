@@ -139,7 +139,7 @@ var jPlayer;
       var h = $('#prior_date span').length;
       var j = $(this).attr('name');
       if (!$(this).hasClass('cur')) {
-        if (h < 6) {
+        if (h < 666) {
           var e = '<span class=\'sel-box w80\' name=\'' + j + '\'>' + j + '<a class=\'close\' href=\'javascript:\' onclick=\'$.removeSel(this,"' + j + '",3)\'></a></span>';
           $('#prior_date').append(e);
           $(this).addClass('cur');

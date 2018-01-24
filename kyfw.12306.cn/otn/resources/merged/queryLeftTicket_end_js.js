@@ -6280,7 +6280,7 @@ var checkusermdId; var showTrainStop; var hideTrainStop; var showTicketPrice; va
         var cL = $('#setion_postion span').length;
         var cN = $(this).attr('p_value');
         if (!$(this).hasClass('cur')) {
-          if (cL < 6) {
+          if (cL < 666) {
             var cJ = '';
             var cK = true;
             if (cN.indexOf('成人') > - 1 || cN.indexOf('残疾军人、伤残人民警察') > - 1) {
